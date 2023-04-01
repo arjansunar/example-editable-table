@@ -13,6 +13,9 @@ type Props<Item> = {
   }[];
 };
 
+/**
+ * A simple editable table that takes in the datasource and the columns as props
+ */
 const EditableTable = <Item extends { key: string }>({
   originData,
   columns,
