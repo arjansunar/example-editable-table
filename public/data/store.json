@@ -1,0 +1,690 @@
+{
+  "http_status": 200,
+  "message": null,
+  "data": [
+    {
+      "id": 1,
+      "general_manager": {
+        "id": 11,
+        "created_date": "2023-01-20T12:11:47.970605-05:00",
+        "modified_date": "2023-01-20T12:11:47.970642-05:00",
+        "first_name": "Dab",
+        "last_name": "Bhattarai",
+        "email": "dab@approvalgenie.ca",
+        "is_active": true,
+        "user": 11,
+        "secondary_store": [7]
+      },
+      "plan": {
+        "id": 1,
+        "payplan": [
+          {
+            "id": 1,
+            "created_date": "2023-01-20T12:11:43.606251-05:00",
+            "modified_date": "2023-02-04T10:46:33.120993-05:00",
+            "desc": "*",
+            "percent": "20.00",
+            "deal_start_range": 0,
+            "deal_end_range": 9,
+            "plan": 1
+          },
+          {
+            "id": 2,
+            "created_date": "2023-01-20T12:11:43.638529-05:00",
+            "modified_date": "2023-02-04T10:46:44.817957-05:00",
+            "desc": "*",
+            "percent": "25.00",
+            "deal_start_range": 9,
+            "deal_end_range": 15,
+            "plan": 1
+          },
+          {
+            "id": 3,
+            "created_date": "2023-01-20T12:11:43.662446-05:00",
+            "modified_date": "2023-02-04T10:46:54.133081-05:00",
+            "desc": "*",
+            "percent": "30.00",
+            "deal_start_range": 15,
+            "deal_end_range": 99999,
+            "plan": 1
+          }
+        ],
+        "created_date": "2023-01-20T12:11:42.984513-05:00",
+        "modified_date": "2023-01-20T12:11:42.984558-05:00",
+        "name": "Plan A"
+      },
+      "created_date": "2023-01-20T12:11:44.326879-05:00",
+      "modified_date": "2023-03-27T10:05:21.710291-04:00",
+      "name": "Mississauga test",
+      "location": "2803 Derry Rd E, Mississauga, ON L4T 1A4",
+      "phone_number": "9056778299",
+      "pack": 1350,
+      "omvic": 177,
+      "clean_fee": 80,
+      "target_value": "400000.00"
+    },
+    {
+      "id": 2,
+      "general_manager": {
+        "id": 13,
+        "created_date": "2023-01-20T12:11:48.535661-05:00",
+        "modified_date": "2023-01-20T12:11:48.535696-05:00",
+        "first_name": "Sash",
+        "last_name": "Karkee",
+        "email": "sash@approvalgenie.ca",
+        "is_active": true,
+        "user": 13,
+        "secondary_store": []
+      },
+      "plan": {
+        "id": 1,
+        "payplan": [
+          {
+            "id": 1,
+            "created_date": "2023-01-20T12:11:43.606251-05:00",
+            "modified_date": "2023-02-04T10:46:33.120993-05:00",
+            "desc": "*",
+            "percent": "20.00",
+            "deal_start_range": 0,
+            "deal_end_range": 9,
+            "plan": 1
+          },
+          {
+            "id": 2,
+            "created_date": "2023-01-20T12:11:43.638529-05:00",
+            "modified_date": "2023-02-04T10:46:44.817957-05:00",
+            "desc": "*",
+            "percent": "25.00",
+            "deal_start_range": 9,
+            "deal_end_range": 15,
+            "plan": 1
+          },
+          {
+            "id": 3,
+            "created_date": "2023-01-20T12:11:43.662446-05:00",
+            "modified_date": "2023-02-04T10:46:54.133081-05:00",
+            "desc": "*",
+            "percent": "30.00",
+            "deal_start_range": 15,
+            "deal_end_range": 99999,
+            "plan": 1
+          }
+        ],
+        "created_date": "2023-01-20T12:11:42.984513-05:00",
+        "modified_date": "2023-01-20T12:11:42.984558-05:00",
+        "name": "Plan A"
+      },
+      "created_date": "2023-01-20T12:11:44.356671-05:00",
+      "modified_date": "2023-04-01T04:37:08.829246-04:00",
+      "name": "ScarboroughTESTTESTTEST",
+      "location": "2944 Eglinton Ave E, Scarborough, ON M1J 2E7",
+      "phone_number": "4162815626",
+      "pack": 1350,
+      "omvic": 148,
+      "clean_fee": 80,
+      "target_value": "400000.00"
+    },
+    {
+      "id": 3,
+      "general_manager": {
+        "id": 12,
+        "created_date": "2023-01-20T12:11:48.257213-05:00",
+        "modified_date": "2023-01-20T12:11:48.257247-05:00",
+        "first_name": "Leo",
+        "last_name": "Savoy",
+        "email": "leo@approvalgenie.ca",
+        "is_active": true,
+        "user": 12,
+        "secondary_store": [8]
+      },
+      "plan": {
+        "id": 1,
+        "payplan": [
+          {
+            "id": 1,
+            "created_date": "2023-01-20T12:11:43.606251-05:00",
+            "modified_date": "2023-02-04T10:46:33.120993-05:00",
+            "desc": "*",
+            "percent": "20.00",
+            "deal_start_range": 0,
+            "deal_end_range": 9,
+            "plan": 1
+          },
+          {
+            "id": 2,
+            "created_date": "2023-01-20T12:11:43.638529-05:00",
+            "modified_date": "2023-02-04T10:46:44.817957-05:00",
+            "desc": "*",
+            "percent": "25.00",
+            "deal_start_range": 9,
+            "deal_end_range": 15,
+            "plan": 1
+          },
+          {
+            "id": 3,
+            "created_date": "2023-01-20T12:11:43.662446-05:00",
+            "modified_date": "2023-02-04T10:46:54.133081-05:00",
+            "desc": "*",
+            "percent": "30.00",
+            "deal_start_range": 15,
+            "deal_end_range": 99999,
+            "plan": 1
+          }
+        ],
+        "created_date": "2023-01-20T12:11:42.984513-05:00",
+        "modified_date": "2023-01-20T12:11:42.984558-05:00",
+        "name": "Plan A"
+      },
+      "created_date": "2023-01-20T12:11:44.383243-05:00",
+      "modified_date": "2023-03-03T17:53:24.624534-05:00",
+      "name": "Ottawa",
+      "location": "1325 Richmond Rd, Ottawa, ON K2B 6R7",
+      "phone_number": "6136957951",
+      "pack": 1350,
+      "omvic": 124,
+      "clean_fee": 80,
+      "target_value": "450000.00"
+    },
+    {
+      "id": 4,
+      "general_manager": {
+        "id": 14,
+        "created_date": "2023-01-20T12:11:48.813628-05:00",
+        "modified_date": "2023-01-20T12:11:48.813663-05:00",
+        "first_name": "Stephan",
+        "last_name": "Bazinet",
+        "email": "baz@approvalgenie.ca",
+        "is_active": true,
+        "user": 14,
+        "secondary_store": []
+      },
+      "plan": {
+        "id": 2,
+        "payplan": [
+          {
+            "id": 4,
+            "created_date": "2023-01-20T12:11:43.688067-05:00",
+            "modified_date": "2023-02-04T10:47:03.701453-05:00",
+            "desc": "*",
+            "percent": "20.00",
+            "deal_start_range": 0,
+            "deal_end_range": 7,
+            "plan": 2
+          },
+          {
+            "id": 5,
+            "created_date": "2023-01-20T12:11:43.711205-05:00",
+            "modified_date": "2023-02-04T10:47:13.770321-05:00",
+            "desc": "*",
+            "percent": "25.00",
+            "deal_start_range": 7,
+            "deal_end_range": 13,
+            "plan": 2
+          },
+          {
+            "id": 6,
+            "created_date": "2023-01-20T12:11:43.736287-05:00",
+            "modified_date": "2023-02-04T10:47:23.204828-05:00",
+            "desc": "*",
+            "percent": "30.00",
+            "deal_start_range": 13,
+            "deal_end_range": 99999,
+            "plan": 2
+          }
+        ],
+        "created_date": "2023-01-20T12:11:43.008058-05:00",
+        "modified_date": "2023-01-20T12:11:43.008102-05:00",
+        "name": "Plan B"
+      },
+      "created_date": "2023-01-20T12:11:44.407869-05:00",
+      "modified_date": "2023-03-03T17:53:40.962869-05:00",
+      "name": "Laval",
+      "location": "2430 Bd du Curé-Labelle, Laval, QC H7T 1R1",
+      "phone_number": "4505056000",
+      "pack": 1570,
+      "omvic": 177,
+      "clean_fee": 80,
+      "target_value": "400000.00"
+    },
+    {
+      "id": 5,
+      "general_manager": {
+        "id": 67,
+        "created_date": "2023-02-15T16:56:29.406540-05:00",
+        "modified_date": "2023-02-15T16:56:29.406572-05:00",
+        "first_name": "Dale",
+        "last_name": "Thibeault",
+        "email": "dale@approvalgenie.ca",
+        "is_active": true,
+        "user": 67,
+        "secondary_store": []
+      },
+      "plan": {
+        "id": 3,
+        "payplan": [
+          {
+            "id": 7,
+            "created_date": "2023-01-20T12:11:43.764071-05:00",
+            "modified_date": "2023-02-04T10:47:33.556599-05:00",
+            "desc": "*",
+            "percent": "20.00",
+            "deal_start_range": 0,
+            "deal_end_range": 9,
+            "plan": 3
+          },
+          {
+            "id": 8,
+            "created_date": "2023-01-20T12:11:43.787252-05:00",
+            "modified_date": "2023-02-04T10:47:43.430773-05:00",
+            "desc": "*",
+            "percent": "25.00",
+            "deal_start_range": 9,
+            "deal_end_range": 15,
+            "plan": 3
+          },
+          {
+            "id": 9,
+            "created_date": "2023-01-20T12:11:43.807689-05:00",
+            "modified_date": "2023-02-04T10:47:51.717398-05:00",
+            "desc": "*",
+            "percent": "30.00",
+            "deal_start_range": 15,
+            "deal_end_range": 99999,
+            "plan": 3
+          }
+        ],
+        "created_date": "2023-01-20T12:11:43.031711-05:00",
+        "modified_date": "2023-01-20T12:11:43.031753-05:00",
+        "name": "Plan C"
+      },
+      "created_date": "2023-01-20T12:11:44.430999-05:00",
+      "modified_date": "2023-03-03T17:54:00.548123-05:00",
+      "name": "Hamilton",
+      "location": "959 Upper James St, Hamilton, ON L9C 3A6",
+      "phone_number": "9054814080",
+      "pack": 1350,
+      "omvic": 126,
+      "clean_fee": 80,
+      "target_value": "300000.00"
+    },
+    {
+      "id": 6,
+      "general_manager": {
+        "id": 9,
+        "created_date": "2023-01-20T12:11:47.405427-05:00",
+        "modified_date": "2023-01-20T12:11:47.405461-05:00",
+        "first_name": "Ben",
+        "last_name": "Tandan",
+        "email": "ben@approvalgenie.ca",
+        "is_active": true,
+        "user": 9,
+        "secondary_store": []
+      },
+      "plan": {
+        "id": 3,
+        "payplan": [
+          {
+            "id": 7,
+            "created_date": "2023-01-20T12:11:43.764071-05:00",
+            "modified_date": "2023-02-04T10:47:33.556599-05:00",
+            "desc": "*",
+            "percent": "20.00",
+            "deal_start_range": 0,
+            "deal_end_range": 9,
+            "plan": 3
+          },
+          {
+            "id": 8,
+            "created_date": "2023-01-20T12:11:43.787252-05:00",
+            "modified_date": "2023-02-04T10:47:43.430773-05:00",
+            "desc": "*",
+            "percent": "25.00",
+            "deal_start_range": 9,
+            "deal_end_range": 15,
+            "plan": 3
+          },
+          {
+            "id": 9,
+            "created_date": "2023-01-20T12:11:43.807689-05:00",
+            "modified_date": "2023-02-04T10:47:51.717398-05:00",
+            "desc": "*",
+            "percent": "30.00",
+            "deal_start_range": 15,
+            "deal_end_range": 99999,
+            "plan": 3
+          }
+        ],
+        "created_date": "2023-01-20T12:11:43.031711-05:00",
+        "modified_date": "2023-01-20T12:11:43.031753-05:00",
+        "name": "Plan C"
+      },
+      "created_date": "2023-01-20T12:11:44.453913-05:00",
+      "modified_date": "2023-03-03T17:54:53.542626-05:00",
+      "name": "Whitby",
+      "location": "701 Dundas St E, Whitby, ON L1N 2J6",
+      "phone_number": "9055560800",
+      "pack": 1350,
+      "omvic": 5070131,
+      "clean_fee": 80,
+      "target_value": "250000.00"
+    },
+    {
+      "id": 7,
+      "general_manager": {
+        "id": 90,
+        "created_date": "2023-03-06T12:42:29.050489-05:00",
+        "modified_date": "2023-03-06T12:42:29.050524-05:00",
+        "first_name": "Jade",
+        "last_name": "Smith",
+        "email": "jade@approvalgenie.ca",
+        "is_active": true,
+        "user": 90,
+        "secondary_store": []
+      },
+      "plan": {
+        "id": 3,
+        "payplan": [
+          {
+            "id": 7,
+            "created_date": "2023-01-20T12:11:43.764071-05:00",
+            "modified_date": "2023-02-04T10:47:33.556599-05:00",
+            "desc": "*",
+            "percent": "20.00",
+            "deal_start_range": 0,
+            "deal_end_range": 9,
+            "plan": 3
+          },
+          {
+            "id": 8,
+            "created_date": "2023-01-20T12:11:43.787252-05:00",
+            "modified_date": "2023-02-04T10:47:43.430773-05:00",
+            "desc": "*",
+            "percent": "25.00",
+            "deal_start_range": 9,
+            "deal_end_range": 15,
+            "plan": 3
+          },
+          {
+            "id": 9,
+            "created_date": "2023-01-20T12:11:43.807689-05:00",
+            "modified_date": "2023-02-04T10:47:51.717398-05:00",
+            "desc": "*",
+            "percent": "30.00",
+            "deal_start_range": 15,
+            "deal_end_range": 99999,
+            "plan": 3
+          }
+        ],
+        "created_date": "2023-01-20T12:11:43.031711-05:00",
+        "modified_date": "2023-01-20T12:11:43.031753-05:00",
+        "name": "Plan C"
+      },
+      "created_date": "2023-01-20T12:11:44.476846-05:00",
+      "modified_date": "2023-03-03T17:54:14.376965-05:00",
+      "name": "Airport",
+      "location": "7420 Airport Rd #100, Mississauga, ON L4T 4E5",
+      "phone_number": "9056788299",
+      "pack": 1350,
+      "omvic": 172,
+      "clean_fee": 80,
+      "target_value": "275000.00"
+    },
+    {
+      "id": 8,
+      "general_manager": {},
+      "plan": {
+        "id": 1,
+        "payplan": [
+          {
+            "id": 1,
+            "created_date": "2023-01-20T12:11:43.606251-05:00",
+            "modified_date": "2023-02-04T10:46:33.120993-05:00",
+            "desc": "*",
+            "percent": "20.00",
+            "deal_start_range": 0,
+            "deal_end_range": 9,
+            "plan": 1
+          },
+          {
+            "id": 2,
+            "created_date": "2023-01-20T12:11:43.638529-05:00",
+            "modified_date": "2023-02-04T10:46:44.817957-05:00",
+            "desc": "*",
+            "percent": "25.00",
+            "deal_start_range": 9,
+            "deal_end_range": 15,
+            "plan": 1
+          },
+          {
+            "id": 3,
+            "created_date": "2023-01-20T12:11:43.662446-05:00",
+            "modified_date": "2023-02-04T10:46:54.133081-05:00",
+            "desc": "*",
+            "percent": "30.00",
+            "deal_start_range": 15,
+            "deal_end_range": 99999,
+            "plan": 1
+          }
+        ],
+        "created_date": "2023-01-20T12:11:42.984513-05:00",
+        "modified_date": "2023-01-20T12:11:42.984558-05:00",
+        "name": "Plan A"
+      },
+      "created_date": "2023-01-20T12:11:44.500477-05:00",
+      "modified_date": "2023-03-03T17:54:26.903344-05:00",
+      "name": "Kingston",
+      "location": "271 Concession St, Kingston, ON K7K 2B7",
+      "phone_number": "8558683155",
+      "pack": 1350,
+      "omvic": 154,
+      "clean_fee": 80,
+      "target_value": "270000.00"
+    },
+    {
+      "id": 9,
+      "general_manager": {},
+      "plan": {
+        "id": 1,
+        "payplan": [
+          {
+            "id": 1,
+            "created_date": "2023-01-20T12:11:43.606251-05:00",
+            "modified_date": "2023-02-04T10:46:33.120993-05:00",
+            "desc": "*",
+            "percent": "20.00",
+            "deal_start_range": 0,
+            "deal_end_range": 9,
+            "plan": 1
+          },
+          {
+            "id": 2,
+            "created_date": "2023-01-20T12:11:43.638529-05:00",
+            "modified_date": "2023-02-04T10:46:44.817957-05:00",
+            "desc": "*",
+            "percent": "25.00",
+            "deal_start_range": 9,
+            "deal_end_range": 15,
+            "plan": 1
+          },
+          {
+            "id": 3,
+            "created_date": "2023-01-20T12:11:43.662446-05:00",
+            "modified_date": "2023-02-04T10:46:54.133081-05:00",
+            "desc": "*",
+            "percent": "30.00",
+            "deal_start_range": 15,
+            "deal_end_range": 99999,
+            "plan": 1
+          }
+        ],
+        "created_date": "2023-01-20T12:11:42.984513-05:00",
+        "modified_date": "2023-01-20T12:11:42.984558-05:00",
+        "name": "Plan A"
+      },
+      "created_date": "2023-01-20T12:11:44.522094-05:00",
+      "modified_date": "2023-01-21T20:52:37.767267-05:00",
+      "name": "Import Motors",
+      "location": "851 Campbell Ave., Ottawa, ON K2A 2C6",
+      "phone_number": "6137297951",
+      "pack": 1350,
+      "omvic": 154,
+      "clean_fee": 600,
+      "target_value": "500000.00"
+    },
+    {
+      "id": 10,
+      "general_manager": {},
+      "plan": {
+        "id": 1,
+        "payplan": [
+          {
+            "id": 1,
+            "created_date": "2023-01-20T12:11:43.606251-05:00",
+            "modified_date": "2023-02-04T10:46:33.120993-05:00",
+            "desc": "*",
+            "percent": "20.00",
+            "deal_start_range": 0,
+            "deal_end_range": 9,
+            "plan": 1
+          },
+          {
+            "id": 2,
+            "created_date": "2023-01-20T12:11:43.638529-05:00",
+            "modified_date": "2023-02-04T10:46:44.817957-05:00",
+            "desc": "*",
+            "percent": "25.00",
+            "deal_start_range": 9,
+            "deal_end_range": 15,
+            "plan": 1
+          },
+          {
+            "id": 3,
+            "created_date": "2023-01-20T12:11:43.662446-05:00",
+            "modified_date": "2023-02-04T10:46:54.133081-05:00",
+            "desc": "*",
+            "percent": "30.00",
+            "deal_start_range": 15,
+            "deal_end_range": 99999,
+            "plan": 1
+          }
+        ],
+        "created_date": "2023-01-20T12:11:42.984513-05:00",
+        "modified_date": "2023-01-20T12:11:42.984558-05:00",
+        "name": "Plan A"
+      },
+      "created_date": "2023-03-27T05:52:59.016663-04:00",
+      "modified_date": "2023-03-27T05:52:59.016692-04:00",
+      "name": "TEST",
+      "location": "TEST location",
+      "phone_number": "1293849384",
+      "pack": 1350,
+      "omvic": 500,
+      "clean_fee": 50,
+      "target_value": "500000.00"
+    },
+    {
+      "id": 11,
+      "general_manager": {},
+      "plan": {
+        "id": 1,
+        "payplan": [
+          {
+            "id": 1,
+            "created_date": "2023-01-20T12:11:43.606251-05:00",
+            "modified_date": "2023-02-04T10:46:33.120993-05:00",
+            "desc": "*",
+            "percent": "20.00",
+            "deal_start_range": 0,
+            "deal_end_range": 9,
+            "plan": 1
+          },
+          {
+            "id": 2,
+            "created_date": "2023-01-20T12:11:43.638529-05:00",
+            "modified_date": "2023-02-04T10:46:44.817957-05:00",
+            "desc": "*",
+            "percent": "25.00",
+            "deal_start_range": 9,
+            "deal_end_range": 15,
+            "plan": 1
+          },
+          {
+            "id": 3,
+            "created_date": "2023-01-20T12:11:43.662446-05:00",
+            "modified_date": "2023-02-04T10:46:54.133081-05:00",
+            "desc": "*",
+            "percent": "30.00",
+            "deal_start_range": 15,
+            "deal_end_range": 99999,
+            "plan": 1
+          }
+        ],
+        "created_date": "2023-01-20T12:11:42.984513-05:00",
+        "modified_date": "2023-01-20T12:11:42.984558-05:00",
+        "name": "Plan A"
+      },
+      "created_date": "2023-04-01T03:20:20.874642-04:00",
+      "modified_date": "2023-04-01T03:20:20.874678-04:00",
+      "name": "TEST",
+      "location": "TEST location",
+      "phone_number": "1293849384",
+      "pack": 1350,
+      "omvic": 500,
+      "clean_fee": 50,
+      "target_value": "500000.00"
+    },
+    {
+      "id": 12,
+      "general_manager": {},
+      "plan": {
+        "id": 1,
+        "payplan": [
+          {
+            "id": 1,
+            "created_date": "2023-01-20T12:11:43.606251-05:00",
+            "modified_date": "2023-02-04T10:46:33.120993-05:00",
+            "desc": "*",
+            "percent": "20.00",
+            "deal_start_range": 0,
+            "deal_end_range": 9,
+            "plan": 1
+          },
+          {
+            "id": 2,
+            "created_date": "2023-01-20T12:11:43.638529-05:00",
+            "modified_date": "2023-02-04T10:46:44.817957-05:00",
+            "desc": "*",
+            "percent": "25.00",
+            "deal_start_range": 9,
+            "deal_end_range": 15,
+            "plan": 1
+          },
+          {
+            "id": 3,
+            "created_date": "2023-01-20T12:11:43.662446-05:00",
+            "modified_date": "2023-02-04T10:46:54.133081-05:00",
+            "desc": "*",
+            "percent": "30.00",
+            "deal_start_range": 15,
+            "deal_end_range": 99999,
+            "plan": 1
+          }
+        ],
+        "created_date": "2023-01-20T12:11:42.984513-05:00",
+        "modified_date": "2023-01-20T12:11:42.984558-05:00",
+        "name": "Plan A"
+      },
+      "created_date": "2023-04-01T04:36:35.863560-04:00",
+      "modified_date": "2023-04-01T04:36:35.863594-04:00",
+      "name": "TEST",
+      "location": "TEST location",
+      "phone_number": "1293849384",
+      "pack": 1350,
+      "omvic": 500,
+      "clean_fee": 50,
+      "target_value": "500000.00"
+    }
+  ],
+  "success": true,
+  "code": null
+}

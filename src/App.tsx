@@ -1,7 +1,9 @@
-import React, { useDeferredValue, useMemo, useState } from "react";
+import React, { useDeferredValue, useEffect, useMemo, useState } from "react";
 import "./App.css";
 import EditableTable from "./EditableTable";
 import { Input } from "antd";
+import { getBank, getEmployee, getInventory, getStore } from "./api";
+import { Bank, Employee, Inventory, Store } from "./type";
 
 export interface Item {
   key: string;
@@ -91,6 +93,10 @@ const App: React.FC = () => {
   //
   const [searchKey, setSearchKey] = useState<string>("");
   const deferredKey = useDeferredValue(searchKey);
+  const [bank, setBank] = useState<Bank[]>();
+  const [employee, setEmployee] = useState<Employee[]>();
+  const [inventory, setInventory] = useState<Inventory[]>();
+  const [store, setStore] = useState<Store[]>();
 
   const [data, setData] = useState(originData);
 
@@ -101,7 +107,22 @@ const App: React.FC = () => {
       ),
     [deferredKey]
   );
-  console.log({ filteredList });
+
+  useEffect(() => {
+    (async () => {
+      // fetch data
+      const { data: bank } = await getBank();
+      const { data: employee } = await getEmployee();
+      const { data: inventory } = await getInventory();
+      const { data: store } = await getStore();
+
+      // set data
+      setBank(bank);
+      setEmployee(employee);
+      setStore(store);
+      setInventory(inventory);
+    })();
+  }, []);
   return (
     <div>
       <Input
