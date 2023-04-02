@@ -1,5 +1,5 @@
 import { Form, Popconfirm, Table, Typography } from "antd";
-import React, { useState } from "react";
+import React, { Key, useState } from "react";
 import { EditableCell } from "./EditableCell";
 
 type Props<Item> = {
@@ -8,7 +8,7 @@ type Props<Item> = {
   columns: {
     title: string;
     dataIndex: string;
-    width?: string;
+    width?: string | number;
     editable?: boolean;
     render?: (_: any, record: Item) => JSX.Element;
   }[];
@@ -17,7 +17,7 @@ type Props<Item> = {
 /**
  * A simple editable table that takes in the datasource and the columns as props
  */
-const EditableTable = <Item extends { key: string }>({
+const EditableTable = <Item extends { key: Key }>({
   data,
   setData,
   columns,
@@ -27,9 +27,9 @@ const EditableTable = <Item extends { key: string }>({
   const [editingKey, setEditingKey] = useState<string>("");
   const isEditing = (record: Item) => editingKey === record.key;
 
-  const edit = (record: Partial<Item> & { key: string }) => {
+  const edit = (record: Partial<Item> & { key: Key }) => {
     form.setFieldsValue({ name: "", age: "", address: "", ...record });
-    setEditingKey(record.key);
+    setEditingKey(String(record.key));
   };
 
   const cancel = () => {
