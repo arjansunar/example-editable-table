@@ -18,47 +18,6 @@ export interface Item2 {
   extra: boolean;
   address: string;
 }
-const originData: Item[] = [];
-for (let i = 0; i < 1000; i++) {
-  originData.push({
-    key: i.toString(),
-    name: `Edward ${i}asdfsfdsdf`,
-    age: 32,
-    address: `London Park no. ${i}`,
-  });
-}
-const originData2: Item2[] = [];
-for (let i = 0; i < 10; i++) {
-  originData2.push({
-    key: i.toString(),
-    name: `Edward ${i}`,
-    age: 32,
-    extra: true,
-    address: `London Park no. ${i}`,
-  });
-}
-
-const columns = [
-  {
-    title: "name",
-    dataIndex: "name",
-    width: "25%",
-    editable: true,
-  },
-  {
-    title: "age",
-    dataIndex: "age",
-    width: "15%",
-    editable: true,
-  },
-  {
-    title: "address",
-    dataIndex: "address",
-    width: "40%",
-    editable: true,
-  },
-];
-
 const inventoryColumn: {
   title: string;
   dataIndex: keyof Inventory;
@@ -85,14 +44,12 @@ const inventoryColumn: {
   },
 ];
 
-const addKey = <T extends { key?: string; id: number | string }>(
+type KeyAdded<T> = T & { key: string };
+const addKey = <T extends { id: number | string }>(
   objList: T[]
-) =>
+): (T & { key: string })[] =>
   objList.map((obj) => {
-    if (!("key" in obj)) {
-      obj.key = String(obj.id);
-    }
-    return obj;
+    return { ...obj, key: String(obj.id) };
   });
 
 const App: React.FC = () => {
@@ -103,7 +60,9 @@ const App: React.FC = () => {
   const deferredKey = useDeferredValue(searchKey);
   const [bank, setBank] = useState<Bank[]>();
   const [employee, setEmployee] = useState<Employee[]>();
-  const [inventory, setInventory] = useState<Inventory[]>([] as Inventory[]);
+  const [inventory, setInventory] = useState<(Inventory & { key: string })[]>(
+    [] as (Inventory & { key: string })[]
+  );
   const [store, setStore] = useState<Store[]>();
 
   // const [data, setData] = useState(originData);
@@ -128,7 +87,7 @@ const App: React.FC = () => {
       setBank(bank);
       setEmployee(employee);
       setStore(store);
-      setInventory(inventory);
+      setInventory(addKey(inventory));
     })();
   }, []);
   return (
@@ -138,8 +97,7 @@ const App: React.FC = () => {
         onChange={(el) => setSearchKey(el.target.value)}
       />
 
-      {/* @ts-ignore */}
-      <EditableTable<Inventory>
+      <EditableTable<KeyAdded<Inventory>>
         data={addKey(inventory)}
         columns={inventoryColumn}
         setData={setInventory}
