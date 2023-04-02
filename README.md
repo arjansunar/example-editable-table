@@ -6,10 +6,21 @@ type Item {
 }
 const TableWrapper = () => {
     const columns = [] // columns for the table
-    const originData =[] // the data source
+    const [data,setData] =useState() // the data source
   return (
     <>
-      <EditableTable<Item> originData={originData} columns={columns} />
+      <EditableTable<Item>
+        data={data}
+        columns={columns}
+        setData={setData}
+      />
+      // if item has no key
+
+      <EditableTable<KeyAdded<Item>>
+        data={addKey(data)}
+        columns={columns}
+        setData={setData}
+      />
     </>
   );
 };
