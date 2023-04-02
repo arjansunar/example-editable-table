@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import { EditableCell } from "./EditableCell";
 
 type Props<Item> = {
-  originData: Item[];
+  data: Item[];
+  setData: React.Dispatch<React.SetStateAction<Item[]>>;
   columns: {
     title: string;
     dataIndex: string;
@@ -17,11 +18,11 @@ type Props<Item> = {
  * A simple editable table that takes in the datasource and the columns as props
  */
 const EditableTable = <Item extends { key: string }>({
-  originData,
+  data,
+  setData,
   columns,
 }: Props<Item>) => {
   const [form] = Form.useForm();
-  const [data, setData] = useState(originData);
 
   const [editingKey, setEditingKey] = useState<string>("");
   const isEditing = (record: Item) => editingKey === record.key;
