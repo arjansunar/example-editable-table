@@ -1,33 +1,33 @@
-import { Form, Popconfirm, Table, Typography } from "antd";
+import { Form, Popconfirm, Table, TableColumnType, Typography } from "antd";
 import React, { Key, useState } from "react";
 import { EditableCell } from "./EditableCell";
 
-type Props<Item> = {
-  data: Item[];
-  setData: React.Dispatch<React.SetStateAction<Item[]>>;
-  columns: {
-    title: string;
-    dataIndex: string;
-    width?: string | number;
-    editable?: boolean;
-    render?: (_: any, record: Item) => JSX.Element;
-  }[];
+export interface EditableColumnType<RecordType>
+  extends Omit<TableColumnType<RecordType>, "dataIndex"> {
+  editable: boolean;
+  dataIndex: keyof RecordType;
+}
+
+type Props<RecordType> = {
+  data: RecordType[];
+  setData: React.Dispatch<React.SetStateAction<RecordType[]>>;
+  columns: EditableColumnType<RecordType>[];
 };
 
 /**
  * A simple editable table that takes in the datasource and the columns as props
  */
-const EditableTable = <Item extends { key: Key }>({
+const EditableTable = <RecordType extends { key: Key }>({
   data,
   setData,
   columns,
-}: Props<Item>) => {
+}: Props<RecordType>) => {
   const [form] = Form.useForm();
 
   const [editingKey, setEditingKey] = useState<string>("");
-  const isEditing = (record: Item) => editingKey === record.key;
+  const isEditing = (record: RecordType) => editingKey === record.key;
 
-  const edit = (record: Partial<Item> & { key: Key }) => {
+  const edit = (record: Partial<RecordType> & { key: Key }) => {
     form.setFieldsValue({ name: "", age: "", address: "", ...record });
     setEditingKey(String(record.key));
   };
@@ -38,7 +38,7 @@ const EditableTable = <Item extends { key: Key }>({
 
   const save = async (key: React.Key) => {
     try {
-      const row = (await form.validateFields()) as Item;
+      const row = (await form.validateFields()) as RecordType;
 
       const newData = [...data];
       const index = newData.findIndex((item) => key === item.key);
@@ -65,7 +65,7 @@ const EditableTable = <Item extends { key: Key }>({
     {
       title: "operation",
       dataIndex: "operation",
-      render: (_: any, record: Item) => {
+      render: (_: any, record: RecordType) => {
         const editable = isEditing(record);
         return editable ? (
           <span>
@@ -97,7 +97,7 @@ const EditableTable = <Item extends { key: Key }>({
     }
     return {
       ...col,
-      onCell: (record: Item) => ({
+      onCell: (record: RecordType) => ({
         record,
         inputType: col.dataIndex === "age" ? "number" : "text",
         dataIndex: col.dataIndex,
