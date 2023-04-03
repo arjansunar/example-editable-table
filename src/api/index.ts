@@ -15,13 +15,13 @@ export const getBank = async () => {
     (res) => res.json() as Promise<DMSResponse<Bank>>
   );
 };
-const sleep = (time: number): Promise<unknown> => {
+export const sleep = (time: number): Promise<unknown> => {
   return new Promise((resolve) => setTimeout(resolve, time));
 };
 
 export const getInventory = async () => {
   return await fetch("../data/inventory.json").then(async (res) => {
-    await sleep(1000);
+    // await sleep(1000);
     return res.json() as Promise<DMSResponse<Inventory>>;
   });
 };
