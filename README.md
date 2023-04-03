@@ -1,9 +1,9 @@
 ## Steps to run the application
 
-0. ```bash
-   pnpm i
-   pnpm dev
-   ```
+```bash
+  pnpm i ## or npm i
+  pnpm dev ## or npm run dev
+```
 
 ## How to use the Editable table
 
