@@ -1,4 +1,5 @@
 import { Bank, DMSResponse, Employee, Inventory, Store } from "../type";
+import { PayplanList } from "../type/payplan";
 
 export const getStore = async () => {
   return await fetch("../data/store.json").then(
@@ -24,4 +25,10 @@ export const getInventory = async () => {
     // await sleep(1000);
     return res.json() as Promise<DMSResponse<Inventory>>;
   });
+};
+
+export const getAllPayplanName = async () => {
+  return await fetch("/data/payplan.json").then(
+    (res) => res.json() as Promise<PayplanList>
+  );
 };
