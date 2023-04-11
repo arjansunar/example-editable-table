@@ -33,4 +33,60 @@ return (
 };
 ```
 
+## How to use AsyncOptions
+
+```tsx
+{
+  /* manual invokation */
+}
+<AsyncOption
+  queryFn={getAllPayplanName}
+  formItemProps={{ name: "ManualAsync", label: "Manual", required: true }}
+>
+  {(payplanList) =>
+    payplanList.map((payplan) => (
+      <Option key={payplan.id} value={payplan.name}>
+        {payplan.name}
+      </Option>
+    ))
+  }
+</AsyncOption>;
+
+// creating object and mapping over it
+const objectTemplate = [
+  {
+    key: "AsyncOption",
+    label: "AsyncOption",
+    name: "asyncOption",
+    asyncComp: true,
+    render: (formItemProps) => (
+      <AsyncOption queryFn={getAllPayplanName} formItemProps={formItemProps}>
+        {(data) =>
+          data.map((item) => (
+            <Option key={item.id} value={item.id}>
+              {item.name}
+            </Option>
+          ))
+        }
+      </AsyncOption>
+    ),
+  },
+];
+
+{
+  /* call by mapping over a json object */
+}
+{
+  formItems.map(({ render, asyncComp, ...formItemProps }) => {
+    if (asyncComp && render)
+      return <div key={formItemProps.key}> {render(formItemProps)}</div>;
+    return (
+      <Form.Item {...formItemProps}>
+        {render ? render(formItemProps) : <Input />}
+      </Form.Item>
+    );
+  });
+}
+```
+
 > Checkout the definition at [EditableTable](./src/EditableTable.tsx)
