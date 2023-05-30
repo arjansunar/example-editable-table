@@ -1,12 +1,12 @@
-// import { EditableTablePage } from "./page/Table";
 import "./App.css";
-import { FormWithOptions } from "./page/Form";
+import { NewDealPage } from "./page/NewDealForm";
 
 const App = () => {
   return (
     <div>
       {/* <EditableTablePage /> */}
-      <FormWithOptions />
+      {/* <FormWithOptions /> */}
+      <NewDealPage />
     </div>
   );
 };
